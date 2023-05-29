@@ -5,4 +5,5 @@ https://github.com/after7203/lookair/blob/master/components/Chart.tsx (받은 �
 깃허브 URL: https://github.com/after7203/lookair
 배포 URL: https://lookair.vercel.app/
 
-![{64C95984-AE95-4B51-BDAD-FD6DA3695DC8}](https://github.com/after7203/lookair/assets/48503261/cb08d603-af0d-4d03-a19f-48c3653d056a)
+![화면 캡처 2023-05-30 000907](https://github.com/after7203/lookair/assets/48503261/6fb80047-91da-481a-b9c1-985586480c04)
+
