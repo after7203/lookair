@@ -1,4 +1,4 @@
-import { ResponsiveLine } from "@nivo/line";
+import { ResponsiveLine } from "@nivo/line"; //그래프 라이브러리
 
 export type ChartDataType = {
   id: string;
@@ -16,8 +16,8 @@ type PropsType = {
 const Chart = ({ dust, useMesh = true }: PropsType) => {
   return (
     <ResponsiveLine
-      data={dust}
-      margin={{ top: 50, right: 150, bottom: 50, left: 60 }}
+      data={dust} //전달받은 데이터를 대입합니다.
+      margin={{ top: 50, right: 150, bottom: 50, left: 60 }} //마진
       xScale={{ type: "point" }}
       // yScale={{
       //   type: "linear",
@@ -26,7 +26,7 @@ const Chart = ({ dust, useMesh = true }: PropsType) => {
       //   stacked: true,
       //   reverse: false,
       // }}
-      yFormat=" >-.3"
+      yFormat=" >-.3" //소숫점 표현
       // axisTop={null}
       // axisRight={null}
       // axisBottom={{
@@ -47,14 +47,15 @@ const Chart = ({ dust, useMesh = true }: PropsType) => {
       //   legendOffset: -40,
       //   legendPosition: "middle",
       // }}
-      pointSize={10}
-      pointColor={{ from: "color", modifiers: [] }}
-      pointBorderWidth={2}
-      pointBorderColor={{ from: "serieColor" }}
-      pointLabelYOffset={-12}
-      enableCrosshair={false}
-      useMesh={useMesh}
+      pointSize={10} //포인트 크기
+      pointColor={{ from: "color", modifiers: [] }} //포인트 색깔
+      pointBorderWidth={2} //포인트 테두리 굵기
+      pointBorderColor={{ from: "serieColor" }} //포인트 테두리 색깔
+      pointLabelYOffset={-12} //포인트라벨 오프셋
+      enableCrosshair={false} //hover 크로스헤어 효과
+      useMesh={useMesh} //커서 hover 메쉬효과
       legends={[
+        //범례
         {
           anchor: "bottom-right",
           direction: "column",
